@@ -27,8 +27,8 @@
 
 | Component | Preview |
 |-----------|---------|
-| Terminal  | ![Terminal](./screenshots/terminal.png) |
-| Neovim    | ![Neovim](./screenshots/nvim.png) |
+| Terminal  | ![Terminal](./screenshots/ghostty.png) |
+| Neovim    | ![Neovim](./screenshots/neovim.png) |
 | Tmux      | ![Tmux](./screenshots/tmux.png) |
 
 ## Quick Start
