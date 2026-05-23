@@ -35,11 +35,10 @@
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/YOUR_USERNAME/dotfiles.git ~/dotfiles
+git clone https://github.com/sabihDev/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 
-# 2. Install dependencies (Ubuntu/Debian)
-./install.sh
+# 2. Install dependencies (see Installation section below)
 
 # 3. Symlink configurations with GNU Stow
 stow ghostty nvim tmux zsh starship
@@ -94,7 +93,7 @@ stow ghostty nvim tmux zsh starship
 # Or symlink individually
 stow ghostty    # ~/.config/ghostty/config
 stow nvim       # ~/.config/nvim/
-stow tmux       # ~/.config/tmux/tmux.conf
+stow tmux       # ~/.tmux.conf
 stow zsh        # ~/.zshrc, ~/.zsh/
 stow starship   # ~/.config/starship/starship.toml
 
@@ -107,7 +106,7 @@ stow -D nvim
 ```bash
 ln -sf ~/dotfiles/ghostty/.config/ghostty/config ~/.config/ghostty/config
 ln -sf ~/dotfiles/nvim/.config/nvim ~/.config/nvim
-ln -sf ~/dotfiles/tmux/.tmux.conf ~/.config/tmux/tmux.conf
+ln -sf ~/dotfiles/tmux/.tmux.conf ~/.tmux.conf
 ln -sf ~/dotfiles/zsh/.zshrc ~/.zshrc
 ln -sf ~/dotfiles/zsh/.zsh ~/.zsh
 ln -sf ~/dotfiles/starship/.config/starship/starship.toml ~/.config/starship/starship.toml
@@ -136,7 +135,7 @@ dotfiles/
 │       │   └── transparency.lua # Transparent UI
 │       └── backup/             # Previous config backups
 ├── tmux/
-│   └── .tmux.conf              # Tmux configuration
+│   └── .tmux.conf              # Tmux configuration (symlinks to ~/.tmux.conf)
 ├── zsh/
 │   ├── .zshrc                  # Shell entry point
 │   └── .zsh/
