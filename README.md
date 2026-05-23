@@ -266,9 +266,6 @@ Available themes: rose-pine-moon (default), moonfly, onedarkpro, nordic, tokyoda
 
 ![Starship Prompt](./screenshots/starship.png)
 
-Catppuccin Mocha powerline-style prompt with segmented colors:
-  󰉋 ~/project   main   v22.0  v3.12   14:30   2s 
- ❯
 ```
 
 Segments: Directory (blue) → Git branch/status (lavender) → Languages (green) → Time (orange) → Duration (yellow)
