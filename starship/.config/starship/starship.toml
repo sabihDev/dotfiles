@@ -1,0 +1,139 @@
+# =========================================================
+# Starship Prompt - Vibrant Catppuccin Mocha Powerline
+# Optimized for Ghostty (theme = catppuccin-mocha)
+# Font: JetBrainsMono Nerd Font
+# =========================================================
+
+add_newline = true
+
+format = """
+[](#89b4fa)\
+$directory\
+[](fg:#89b4fa bg:#cba6f7)\
+$git_branch\
+$git_status\
+[](fg:#cba6f7 bg:#a6e3a1)\
+$nodejs\
+$golang\
+$python\
+$rust\
+$package\
+[](fg:#a6e3a1 bg:#fab387)\
+$time\
+[](fg:#fab387 bg:#f9e2af)\
+$cmd_duration\
+[](fg:#f9e2af)\
+$line_break\
+$character
+"""
+
+# =========================================================
+# DIRECTORY (Blue)
+# =========================================================
+[directory]
+style = "fg:#1e1e2e bg:#89b4fa"
+format = "[ 󰉋 $path ]($style)"
+truncation_length = 3
+truncate_to_repo = true
+home_symbol = "~"
+read_only = " 󰌾"
+
+# =========================================================
+# GIT BRANCH (Lavender)
+# =========================================================
+[git_branch]
+symbol = " "
+style = "fg:#1e1e2e bg:#cba6f7"
+format = "[ $symbol$branch ]($style)"
+
+# =========================================================
+# GIT STATUS (Peach text on Lavender background)
+# =========================================================
+[git_status]
+style = "fg:#1e1e2e bg:#cba6f7"
+format = "[ $all_status$ahead_behind ]($style)"
+
+conflicted = "!"
+ahead = "⇡"
+behind = "⇣"
+diverged = "⇕"
+untracked = "?"
+stashed = "$"
+modified = "*"
+staged = "+"
+renamed = "»"
+deleted = "✘"
+
+# =========================================================
+# LANGUAGE RUNTIMES (Green background)
+# =========================================================
+[nodejs]
+symbol = " "
+style = "fg:#1e1e2e bg:#a6e3a1"
+format = "[ $symbol$version ]($style)"
+
+[golang]
+symbol = " "
+style = "fg:#1e1e2e bg:#a6e3a1"
+format = "[ $symbol$version ]($style)"
+
+[python]
+symbol = " "
+style = "fg:#1e1e2e bg:#a6e3a1"
+format = "[ $symbol$version ]($style)"
+
+[rust]
+symbol = " "
+style = "fg:#1e1e2e bg:#a6e3a1"
+format = "[ $symbol$version ]($style)"
+
+[package]
+symbol = "󰏗 "
+style = "fg:#1e1e2e bg:#a6e3a1"
+format = "[ $symbol$version ]($style)"
+
+# =========================================================
+# TIME (Orange)
+# =========================================================
+[time]
+disabled = false
+time_format = "%H:%M"
+style = "fg:#1e1e2e bg:#fab387"
+format = "[  $time ]($style)"
+
+# =========================================================
+# COMMAND DURATION (Yellow)
+# =========================================================
+[cmd_duration]
+min_time = 1000
+style = "fg:#1e1e2e bg:#f9e2af"
+format = "[  $duration ]($style)"
+
+# =========================================================
+# PROMPT CHARACTER
+# =========================================================
+[character]
+success_symbol = "[❯](bold #89dceb)"
+error_symbol = "[❯](bold #f38ba8)"
+vicmd_symbol = "[❮](bold #f9e2af)"
+
+# =========================================================
+# DISABLED MODULES
+# =========================================================
+[aws]
+disabled = true
+
+[gcloud]
+disabled = true
+
+[kubernetes]
+disabled = true
+
+[docker_context]
+disabled = true
+
+[hostname]
+disabled = true
+
+[username]
+disabled = true

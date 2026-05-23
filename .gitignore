@@ -1,0 +1,62 @@
+# Secrets & Credentials
+.env
+.env.*
+*.env
+secrets/
+.credentials
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+ssh/
+gpg/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor backups
+*~
+*.swp
+*.swo
+*#
+.#*
+
+# Neovim
+/undodir/
+data/
+state/
+lock/
+sites/
+*.log
+
+# Tmux
+tmux-cht.sh
+
+# Zsh history
+.zhistory
+.zsh_history
+*.zwc
+
+# Local machine-specific configs (override files)
+*.local
+local.zsh
+
+# Package manager caches
+.cache/
+
+# Build artifacts
+*.o
+*.so
+*.a
+
+# IDE
+.idea/
+.vscode/
+*.sublime-*
+
+# Temporary files
+tmp/
+temp/
